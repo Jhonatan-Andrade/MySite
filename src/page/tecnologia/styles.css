@@ -1,0 +1,102 @@
+.tecnologia{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bc);
+
+}
+.tecnologia header{
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 12vh;
+}
+.tecnologia .title{
+  width: 90%;
+  height: auto;
+  padding-left: 20px;
+  color:var(--color-first);
+  border-bottom: 3px rgba(0, 0, 0, 0.137) solid;
+}
+.tecnologia .listTec{
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tecnologia .tec{
+  width: 33%;
+  height: 450px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color:var(--color-first);
+  padding: 50px 40px;
+  margin:0 20px ;
+}
+.tecnologia img {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.tecnologia .img{height: 40%;}
+.tecnologia .h1{height: 15%}
+.tecnologia .p{height: 45%}
+.tecnologia h1{
+  font-size: 14pt;
+}
+.tecnologia p{
+  font-size: 12pt;
+}
+@media  screen and (max-width: 1200px) {
+  .tecnologia .tec{
+    padding: 50px 40px;
+    margin:0 10px ;
+  }
+}
+@media  screen and (max-width: 1050px) {
+  .tecnologia{
+
+    padding-bottom: 170px;
+  }
+  .tecnologia .listTec{
+    display: block;
+    
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .tecnologia .tec{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    margin:30px auto ;
+  }
+  .tecnologia .img,.h1,.p{height: 100%}
+  .tecnologia .img{width: 100%}
+  .tecnologia p{
+    margin-top: 15px;
+  }
+}
+@media  screen and (max-width: 900px) {
+  .tecnologia .tec{
+    width: 410px;;
+  }
+}
+@media  screen and (max-width: 750px) {
+  .tecnologia .tec{
+    width: 320px;
+    height: 400px;
+    margin: 20px auto ;
+    display: block;
+
+  }
+  .tecnologia .img{height: 40%}
+  .tecnologia .h1{height: 15%}
+  .tecnologia .p{height: 45%}
+  .tecnologia h1{
+    font-size: 14pt;
+  }
+  .tecnologia p{
+    font-size: 12pt;
+  }
+}

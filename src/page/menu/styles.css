@@ -1,0 +1,33 @@
+.conteiner{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.conteiner .menu{
+  height: 100vh;
+  background:var(--menu-bc);
+  display: block;
+  justify-content: space-between;
+  transition: 100ms linear;
+  color: var(--color-second);
+
+}
+.computer{
+  width: 400px;
+}
+.mobile{
+  position: absolute;
+  left: -80%;
+  width: 80%;
+}
+.open{
+  left: 0;
+}
+.conteiner  .box{
+  width: 100%;
+  color: var(--color-second);
+}
+
+
+

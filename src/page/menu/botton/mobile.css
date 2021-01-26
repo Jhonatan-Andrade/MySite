@@ -1,0 +1,63 @@
+/*------------------------------------*/
+.label{
+    cursor: pointer;
+    position: fixed;
+    display: block;
+    height: 40px;
+    width: 40px;
+    top:6px;
+    left:10px;
+  }
+  .labelopen{
+    background-color: rgba(255, 255, 255, 0.747);
+    border-radius: 10px;
+  }
+  
+  .label span{
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    border-radius: 30px;
+    transition: 0.25s ease-in-out;
+    margin: 10px 5px;
+  }
+  .label .open{
+    background:var(--color-second);
+  }
+  .label .close{
+    background:var(--menu-bc);
+    
+  }
+  .spanOpenFirst{
+    top: 0;
+  }
+  
+  .spanOpenSecond{
+    top: 8px;
+  }
+  
+  .spanOpenThird{
+    top: 16px;
+  }
+  
+  .spanCloseFirst{
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  
+  .spanCloseSecond{
+    opacity: 0;
+  }
+  
+  .spanCloseThird{
+    transform: rotate(45deg);
+    top:8px;
+  }
+  /*------------------------------------*/
+
+  @media  screen and (min-width: 750px) {
+    .label{
+      display: none;
+    }
+  }
+  

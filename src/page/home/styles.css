@@ -1,0 +1,49 @@
+.home {
+  background-image:url('../../assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  border-bottom-left-radius: 400px ;
+}
+.home .circle{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  top:6px;
+  left:10px;
+  background-color: rgba(255, 255, 255, 0.144);
+  border-radius: 50%;
+ 
+}
+.home .title{
+  padding: 100px 0 0 5%;
+}
+.home .text{
+  margin-bottom: 30px;
+}
+.home h1{
+  font-size: 30pt;
+}
+.home h2{
+  font-size: 20pt;
+}
+.home span{
+  color: var(--color-third);
+}
+.home .name{
+  font-size: 35pt;
+}
+.home .job{
+  font-size: 25pt;
+}
+@media  screen and (max-width: 750px) {
+  .home {
+    background-image:url('../../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    border-bottom-left-radius: 0;
+  }
+}
