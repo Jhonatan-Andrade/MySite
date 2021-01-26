@@ -116,6 +116,11 @@
 }
 @media  screen and (max-width: 750px) {
   .data{
-    margin:  0 auto 50px auto ;
+    height: auto;
+    margin:  250 auto ;
+  }
+  .text-box{
+    height: auto;
+    padding: 70px auto 0 auto;
   }
 }

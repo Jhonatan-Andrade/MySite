@@ -99,4 +99,13 @@
   .tecnologia p{
     font-size: 12pt;
   }
+  .tecnologia .title{
+    border-bottom: 0;
+  }
+  .tecnologia .tec{
+    box-shadow: none;
+  }
+  .tecnologia img {
+    box-shadow: none;
+  }
 }
