@@ -1,52 +1,34 @@
 
 import  './styles.css';
 
-import MenuHamburguer from './botton'
-import MenuBox from './box'
+import githubImg from '../../assets/icons/github.png'
+import gmailImg from '../../assets/icons/gmail.png'
+import linkedinImg from '../../assets/icons/linkedin.png'
 
-import React, {useState,useEffect} from 'react';
 
-function Menu({children,navigation}) {
 
-    const [menuWidth,setMenuWidth]= useState(true)
-    const [menu,setMenu]= useState(false)
 
-    const { innerWidth: width} = window;
-
-    useEffect(()=>{
-        if(width < 750){setMenuWidth(false)}
-    },[])
-
-    function menuClassName() {
-        if (!menuWidth) {
-            if (menu) {
-                return 'menu mobile open'
-            }else{
-                return 'menu mobile'
-            }
-        }else{
-            return 'menu computer'
-        }
-    }
-    function menuClick() {
-            if (menu) {
-                setMenu(false)
-            }else{
-                setMenu(true)
-            }
-    }
+function Menu() {
     return(
-        <main className="conteiner">
-            <header className={menuClassName()} >  
-                <a onClick={()=>{menuClick()}}>
-                    <MenuHamburguer menuValue={menu}/>
-                </a>
-                <MenuBox navigation={(props)=>{setMenu(false);navigation(props)}}/>
-            </header>
-            <div className="box">
-              {children}
-            </div>
-        </main>
+                <div className="siteJob">
+                    <ul className="jobs" >
+                        <li className="job job1">
+                            <a className="a" href="https://github.com/Jhonatan-Andrade/" target="blank">
+                                <img className="jobs__link" width={18} height={18} src={githubImg} alt="github" />                     
+                            </a>
+                        </li>
+                        <li className="job job2">
+                            <a className="a" href="http://gmail.com/" target="bank">
+                                <img className="jobs__link" width={18} height={18} src={gmailImg} alt="gmail" />                          
+                            </a>
+                        </li>
+                        <li className="job job3">
+                            <a className="a" href="https://www.linkedin.com/in/jhonatan-andrade-9116241ab/" target="bank">
+                                <img className="jobs__link" width={18} height={18} src={linkedinImg} alt="linkedin" />                           
+                            </a>
+                        </li>
+                    </ul>
+                </div>
     )
 }
 export default Menu

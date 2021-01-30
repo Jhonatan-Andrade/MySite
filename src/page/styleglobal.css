@@ -7,13 +7,13 @@
   --color-second:#f0f0f9;
   --color-third:#17ce5d;
 
-  --bc:#f0f0f9;
+  --bc:#e6e6e6;
 }
 html,
 body {
   font-family: 'Mulish', sans-serif;
   overflow-x:hidden;
-  background-color: var(--menu-bc);
+  background-color: var(--bc);
 }
 * {
   box-sizing: border-box;

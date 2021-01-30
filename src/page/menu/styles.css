@@ -1,32 +1,40 @@
-.conteiner{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-}
-.conteiner .menu{
-  height: 100vh;
-  background:var(--menu-bc);
-  display: block;
-  justify-content: space-between;
-  transition: 100ms linear;
-  color: var(--color-second);
 
+.siteJob{
+  width: 40px;
+  align-items: center;
+  position: fixed;
+  top: 60%;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius:10px;
+  border-bottom-left-radius:10px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
 }
-.computer{
-  width: 400px;
+.jobs{
+  list-style: none;
 }
-.mobile{
-  position: absolute;
-  left: -80%;
-  width: 80%;
+.job{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms linear;
 }
-.open{
-  left: 0;
+.job:hover{
+  /* background-color: rgb(44, 157, 255); */
+  background-color: var(--color-third);
 }
-.conteiner  .box{
-  width: 100%;
-  color: var(--color-second);
+.job__link{
+  color: var(--color-third);
+  text-decoration: none;
+  border-top-left-radius:10px;
+}
+.job1{
+  border-top-left-radius:10px;
+}
+.job3{
+  border-bottom-left-radius:10px;
 }
 
 
