@@ -4,7 +4,6 @@ import './styleglobal.css';
 import Menu from './menu/index';
 import Home from './home';
 import About from './about';
-import Tecnologia from './tecnologia';
 
 
 
@@ -22,7 +21,6 @@ function Router() {
       <main className='main'>
         <Home/>
         <About/>
-        <Tecnologia/>
       </main>
     </>
   );
