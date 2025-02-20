@@ -11,12 +11,12 @@ export default function Home() {
             <h1 className="font-bold text-2xl">Jhonatan Andrade</h1>
             <p className="text-slate-600 ">jhonatanjaq.dev@gmail.com</p>
             <ul className=" flex flex-row gap-8 py-8">
-                <li className=" hover:bg-slate-900  rounded-lg p-2">
+                <li key={"github"} className=" hover:bg-slate-900  rounded-lg p-2">
                     <Link  href="https://github.com/Jhonatan-andrade" target="_blank">
                     <Image src="./github.svg" alt="github" width={36} height={36} className="lg:w-6 lg:h-6" />
                     </Link>
                 </li>
-                <li className=" hover:bg-slate-900  rounded-lg p-2">
+                <li  key={"linkedin"} className=" hover:bg-slate-900  rounded-lg p-2">
                     <Link  href="https://www.linkedin.com/in/jhonatan-andrade-9116241ab/" target="_blank">
                     <Image src="./linkedin.svg" alt="linkedin"width={36} height={36} className="lg:w-6 lg:h-6" />
                     </Link>
@@ -30,7 +30,7 @@ export default function Home() {
                 <p className="lg:text-lg">Apaixonado por tecnologia e inovação. Atualmente, estou focado em aprimorar minhas habilidades em Back-End  além de explorar as possibilidades do Next.js para criar interfaces de usuário. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer como desenvolvedor.</p>
             </div>
             <ul className=" grid grid-cols-4 md:grid-cols-6  gap-4 py-8 ">
-                {technologyList.map((item) => (<TechnologyItem src={item.src} name={item.name} />))}
+                {technologyList.map((item) => (<TechnologyItem key={item.id} src={item.src} name={item.name} />))}
             </ul>
         </div>   
       </section>
