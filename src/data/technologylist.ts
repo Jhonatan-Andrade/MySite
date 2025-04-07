@@ -6,7 +6,6 @@ export const technologyList = [
     {id:5, name:"Tailwind", src:"./technology/tailwindcss.svg",  }, 
     {id:6, name:"TypeScript", src:"./technology/typescript.svg",  }, 
     {id:7, name:"Nodejs", src:"./technology/npm.svg",  }, 
-    {id:8, name:"Nestjs", src:"./technology/nestjs.svg",  },
     {id:9, name:"Docker", src:"./technology/docker.svg",  }, 
     {id:10, name:"Prisma", src:"./technology/prisma.svg",  }, 
     {id:11, name:"Postgresql", src:"./technology/postgresql.svg",  }, 
