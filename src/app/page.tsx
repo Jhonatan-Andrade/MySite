@@ -9,7 +9,7 @@ export default function Home() {
         <div className="  w-full flex flex-col items-center justify-center md:w-3/4 lg:w-5/12 ">
             <Image src="./avatar.svg" alt="Avatar" width={200} height={200} className="lg:w-72 lg:h-72"  />
             <h1 className="font-bold text-2xl">Jhonatan Andrade</h1>
-            <p className="text-slate-600 ">jhonatanjaq.dev@gmail.com</p>
+            <p className="text-slate-600 ">jhonatanjaq@gmail.com</p>
             <ul className=" flex flex-row gap-8 py-8">
                 <li key={"github"} className=" hover:bg-slate-900  rounded-lg p-2">
                     <Link  href="https://github.com/Jhonatan-andrade" target="_blank">
